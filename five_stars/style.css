@@ -1,0 +1,29 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #f6f6f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.star svg {
+  stroke: grey;
+  stroke-width: 10px;
+}
+
+.mark-1 .star-1 svg,
+.mark-2 .star-1 svg, .mark-2 .star-2 svg, 
+.mark-3 .star-1 svg, .mark-3 .star-2 svg, .mark-3 .star-3 svg,
+.mark-4 .star-1 svg, .mark-4 .star-2 svg, .mark-4 .star-3 svg, .mark-4 .star-4 svg,
+.mark-5 .star-1 svg, .mark-5 .star-2 svg, .mark-5 .star-3 svg, .mark-5 .star-4 svg, .mark-5 .star-5 svg {
+  fill: #ffd200;
+  stroke: #ffd200;
+}
