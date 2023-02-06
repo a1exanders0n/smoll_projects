@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;900&display=swap");
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #000000;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+svg {
+  height: 100vh;
+  width: 100vw;
+  /* min-height: 100%;
+  min-width: 100%; */
+}
+
+svg a:hover .ring {
+  animation-name: beakon;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+@keyframes beakon {
+  0% {
+    r: 22;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    r: 50;
+    opacity: 0;
+  }
+}
+
+.overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  /* position: absolute; */
+  position: fixed;
+  top: 0;
+  backdrop-filter: blur(45px);
+}
+
+.modal {
+    display: flex;
+    gap: 100px;
+    position: relative;
+    width: 60%;
+    background: #ffffff;
+    border-radius: 40px;
+    box-shadow: #00000046;
+    padding: 75px 95px;
+}
+
+.show {
+    display: flex;
+}
+
+.product-image, .content {
+    flex: 1;
+}
+
+.close {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: -.5px;
+    padding: 0;
+    margin: 0 0 50px 0;
+    line-height: .9;
+    color: #f41e82;
+}
+
+.description {
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+.buy-now {
+    background-color: #ffd200;
+    color: #000000;
+    border-radius: 100px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    padding: 20px 50px;
+    text-decoration: none;
+}
+
+.buy-now:hover {
+    background-color: #3452a5;
+    color: #ffd200;
+}
